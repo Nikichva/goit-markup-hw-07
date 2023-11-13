@@ -48,7 +48,7 @@ ol {
 }
 
 .container {
-  max-width: 1158px;
+  max-width: 428px;
   min-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
@@ -1056,6 +1056,7 @@ ol {
 
 .menu-container .card-set {
   padding-top: 48px;
+  justify-content: space-between;
 }
 
 .mobiledown .nav-contact .list {
@@ -1122,7 +1123,11 @@ ol {
 }
 
 /* ================================================= TABLET 👇 ========================================= */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1157px) {
+  .container {
+    max-width: 768px;
+  }
+
   .footer-input {
     width: 264px;
   }
@@ -1207,9 +1212,13 @@ ol {
   }
 }
 /* ================================================= DESKTOP 👇 ========================================= */
-@media (min-width: 1200px) {
+@media (min-width: 1158px) {
   .item {
     width: calc((100% - 72px) / 4);
+  }
+
+  .container {
+    max-width: 1158px;
   }
 
   .section-pt {
@@ -1255,6 +1264,14 @@ ol {
   .footer-box {
     margin: 0 120px 0 0;
     text-align: left;
+  }
+
+  .footer-box:nth-child(2) {
+    margin: 0 80px 0 0;
+  }
+
+  .footer-box:nth-child(3) {
+    margin: 0;
   }
 
   .footer-form {
